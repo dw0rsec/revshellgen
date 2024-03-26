@@ -57,6 +57,10 @@ python3 ./revshellgen.py -t bash -i <YOUR_IP_ADDRESS> -p <PORT_NUMBER>
 - perl
 - ruby
 
+## Acknowledgements
+
+This tool was inspired by various reverse shell cheat sheets and is provided as-is with no warranties.
+
 ## License
 
 This project is licensed under the GNU General Public License v3.0 - see the [LICENSE](https://github.com/dw0rsec/revshellgen/blob/main/LICENSE) file for details.
