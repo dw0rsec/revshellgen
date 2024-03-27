@@ -8,14 +8,14 @@ import sys
 
 def print_banner():
     print(r"""
-                        __         ____               
-   ________ _   _______/ /_  ___  / / /___ ____  ____ 
+                        __         ____
+   ________ _   _______/ /_  ___  / / /___ ____  ____
   / ___/ _ \ | / / ___/ __ \/ _ \/ / / __ `/ _ \/ __ \
  / /  /  __/ |/ (__  ) / / /  __/ / / /_/ /  __/ / / /
-/_/   \___/|___/____/_/ /_/\___/_/_/\__, /\___/_/ /_/ 
-                                   /____/             
+/_/   \___/|___/____/_/ /_/\___/_/_/\__, /\___/_/ /_/
+                                   /____/
 """)
-    
+
 def urlencode(rev_shell):
     encoded_shell = urllib.parse.quote(rev_shell)
     encoded_shell = encoded_shell.strip()
@@ -51,7 +51,7 @@ def reverse_shell(shell_type, ip, port):
 
 def main():
     print_banner()
-    parser = argparse.ArgumentParser(description="A reverse shell generator")   
+    parser = argparse.ArgumentParser(description="A reverse shell generator")
     parser.add_argument("-s", "--shells", action="store_true", help="list available reverse shells")
     parser.add_argument("-b", "--base64", action="store_true", help="base64 encode the reverse shell")
     parser.add_argument("-u", "--urlencode", action="store_true", help="urlencode the reverse shell")
